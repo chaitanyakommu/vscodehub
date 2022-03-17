@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>This is Raj's html file</title>
+	  </head>
+	  ​<body>
+		<h1> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			&emsp;&emsp;&emsp;&emsp;  <i>Raj's form</i></h1>
+		 <form action="Raj.html" method="get">
+	   
+	   <!-- The fieldset element is used to group related data in a form, 
+		and the legend element defines a caption for the fieldset element. -->
+		<fieldset>
+		<legend><strong>Personal Info:</strong></legend>
+	
+		 <label for="user"><b>Username</b></label>&emsp;<input type="text" name="user" placeholder="username" required> <br><br>
+		 <label for="pwd"><strong>Password  </strong></label>&emsp;<input type="password" name="pwd" placeholder="password" required><br><br>
+		 <br>Hobbies <input type= "checkbox" > Cricket 
+				 <input type= "checkbox" > Footy
+				 <input type= "checkbox" > Reading Books 
+				 <br> <br>
+		 Gender  <input type="radio" name="gender"> Male
+				 <input type="radio" name="gender"> Female	<br><br>
+		 DOB <input type="date" ><br><br>
+		 Email Id <input type="email">	<br><br>
+		 Phone Number <input type="tel" name="phone"><br><br>
+		 Upload Photo <input type="file" name="uphoto"><br><br>
+		 Upload Signture <input type="file" name="sig"><br><br>
+		 Country 
+			<select>
+			 <option>Australia<option>
+		  <option>Usa<option>
+			 <option>India<option>
+			  </select>	<br><br>	
+	
+			<label for="study">Educational Qualification attained:</label>
+			<input list="edu" name="study" id="study">
+		 <!--   The datalist tag is not supported in Safari 12.0 (or earlier).-->
+			<datalist id="edu">
+			  <option value="X">
+			  <option value="XII">
+			  <option value="Graduate">
+			  <option value="Post graduate">
+			  <option value="PHD">
+			</datalist>
+			<br><br>
+			<label for="favcolor">Your favorite color:</label>
+			<input type="color" name="favcolor" value="#ff0000"><br><br>
+		   <!-- The optgroup tag is used to group related options in a drop-down list: -->
+			<label for="city">Choose favorite destination:</label>
+		   <select name="city" id="city">
+		<optgroup label="India">
+		  <option value="Hyd">Hyderabad</option>
+		  <option value="Bang">Bangalore</option>
+		  <option value="Del">Delhi</option>
+		  <option value="Arku">Araku</option>
+	
+		</optgroup>
+		<optgroup label="Australia ">
+		  <option value="melb">Melbourne</option>
+		  <option value="syd">Sydney</option>
+		  <option value="tas">Tasmania</option>
+		  <option value="bris">Brisbane</option>
+	
+	
+		</optgroup>
+	  </select>
+	  <br><br>
+	
+	
+	 About yourself 
+		<textarea rows="5" cols="25"> </textarea><br><br> 
+		&emsp;
+		<a href ="https://outlook.live.com"><input type="button" value="Register"></a>
+		
+		<input type="submit">&ensp; <input type="Reset">&ensp;
+		
+		<input type ="button" onclick="alert('This is the HTML form sample using Form elements')" value ="Click Me!">
+	 
+	   
+		<br><br>
+	
+		<!-- Using details element -->
+		<details>
+			<summary><b>About Author</b></summary>
+			<p> <a href="mailto:c_raj@yahoo.com"><b>Raj</b></a> : Student at Generation , learning HTML , Javascript and Saleforce development </p>
+		  </details>
+	</fieldset>
+		
+	</form>	
+	</body>
+</html>
