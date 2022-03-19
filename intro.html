@@ -1,35 +1,77 @@
 <html>
 
-<head>
-    <title>this is my frist program</title>
-</head>
-
-<body>
-    <H1> FORM </H1>
-    <form action="mytext" method="get">
-        Username <input type="text" name="user">
-	Password <input type="password" name="pwd"> 
-	Hobbies <input type="checkbox"> Cricket
-                <input type="checkbox"> COCO
-                <input type="checkbox"> Reading Books
-        Gender <input type="radio" name="gender"> Male
-               <input type="radio" name="gender"> 
-	Female DOB <input type="date"> 
-	Emailid <input type="email"> 
-	Upload Photo and Signature Photo <input type="file" name="uphoto"> 
-	Signture <input type="file" name="sig">
-	Country
-        <select>
-		 <option> Australia <option>
-		 <option> usa <option>
-		 <option> uae <option>
-		 <option> india <option>
-	 </select> 
-	 About yourself
-        <textarea rows="5" cols="25"> 
-	</textarea>
-	Register <input type="submit"> <input type="Reset">
-    </form>
-</body>
-
+	<head>
+		<title>This is my First HTML Project</title>
+	</head>
+	
+	<body>
+		<H1> STUDENT FORM </H1>
+		<form action="mytext" method="get">
+		 <h4>
+		 <br>       
+		 Username: <input type="text" name="user" required minlength="3" maxlength="12">
+		 <br><br> 
+		 Password: <input type="password" name="pwd" required>
+		 <br><br><br>
+		 </h4>
+		 Gender:  <input type="radio" name="gender"> Male
+				 <input type="radio" name="gender"> Female
+		 <br><br><br>        	
+		 DOB: <input type="date" >
+		 <br><br><br>
+		 Email Id: <input type="email">	
+		 <br><br><br>
+		 <h3>Upload Photo and Signature</h3>
+		 <br><br> 
+			Photo <input type="file" name="uphoto">
+		 <br><br><br>   
+			 Signture <input type="file" name="sig">
+		 
+	
+		<!--   ((replace original code))
+	
+		<h3>Country of Birth</h3>
+		   <select>
+			 <option> Australia <option>
+			  <option> UK <option>    
+			  <option> USA <option>
+			  <option> UAE <option>
+			 <option> Philippines <option>        
+			 <option> India <option>
+			<option> Others <option>   
+			</select>
+	
+		-->
+		<br><br><br>
+		<h3>Country of Birth</h3>
+			<input list="country">
+			<datalist id="country">
+			  <option>Australia</option>
+			  <option>UK</option>
+			  <option>USA</option>
+			  <option>Philippines</option>
+			  <option>India</option>
+			  <option>Pls specify</option>
+			</datalist>
+	
+	
+		<br><br>
+		<h3>Hobbies</h3>
+		<input type= "checkbox" > Sports
+		<input type= "checkbox" > Music
+		<input type= "checkbox" > Movies
+		<input type= "checkbox" > Home & Garden
+		<input type= "checkbox" > Books 
+		<br> <br> 
+	
+		<h3>You can write more about yourself</h3> 
+		<textarea rows="10" cols="50"> </textarea>
+		<br><br><br> 
+	
+		<h3>Register</h3>
+		<input type="submit"> <input type="Reset"> 
+	
+		</form>	
+	</body>
+	
 </html>
