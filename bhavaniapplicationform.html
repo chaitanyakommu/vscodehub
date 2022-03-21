@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application</title>
+</head>
+<body>
+    <form method="get" action="mytext"  target="_blank">
+    <h1>Registration Form</h1>
+<label for="uname" >Username </label> <input type="text" name="uname" /><br><br>
+<label for="pword">Password</label>   <input type="password" name="pword" /><br><br>
+<label for="dt">DOB</label>           <input type="date" name="dt" /><br><br>
+<label for="em">Email</label>         <input type="email" name="em" /><br><br>
+<label for="gender">Gender</label>    <input type="radio" name="gender" value="m"/>Male
+                                      <input type="radio" name="gender" value="f"/>Female<br><br>
+<label for="hb">Hobbies</label>       <input type="checkbox" name="hb" value="hp"/>Playing
+                                      <input type="checkbox" name="hb" value="hd"/>Dancing
+                                      <input type="checkbox" name="hb" value="hs"/>Singing<br><br>
+<label for="countrylist">Country</label>
+                                      <select name="countrylist">
+                                         <option>Australia</option>
+                                         <option>India</option>
+                                         <option>Newzeland</option>
+                                       </select> <br><br>
+<label for="photo">Photo</label>      <input type="file" name="photo"/><br><br>
+About yourself<br><textarea rows="5" cols="50" name="txtarea"></textarea><br><br>
+<input type="submit" value="Register"/>
+</form>
+</body>
+</html>
